@@ -1,0 +1,13 @@
+body{
+    margin:0;
+}
+
+
+header{
+    background-color: #c2002f;
+    background-image: url(/images/ajax-achtergrond-image-header.png);
+}
+
+img{
+    max-width: 20em;
+    max-height:20em;}
