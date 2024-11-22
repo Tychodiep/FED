@@ -98,12 +98,8 @@ Andere gemiste functionaliteiten waren een light- en dark-modus, een high-contra
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | Tycho: 
+  als eerst willen we het gaan hebben over hoe we text over plaatjes kunnen plaatsen| tess: nu willen we het gaan hebben over grids en hoe je het best verschillende elementen aanspreekt.| Bente: wat meer te weten komen over de agenda en de planning de komende weken. 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
