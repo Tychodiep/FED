@@ -55,8 +55,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+ Voor mijn test heb ik samengewerkt met Joost. Tijdens het proces merkten we dat sommige aspecten van de test behoorlijk ingewikkeld waren, wat ervoor zorgde dat niet alles meteen duidelijk was.
 
+Een belangrijk aandachtspunt was dat de HTML-code veel fouten liet zien in de validator. Dit is iets wat ik zeker wil verbeteren in mijn website. Daarnaast viel het ons op dat er geen alternatieve tekst werd gebruikt bij grafieken en andere complexe afbeeldingen, wat de toegankelijkheid aanzienlijk kan belemmeren.
+
+Verder was er geen transcriptie beschikbaar voor de audio-inhoud, wat problematisch is voor gebruikers die slechthorend zijn of in situaties waarin geluid niet gebruikt kan worden. Ook ontbrak een skiplink, een essentiële functie voor gebruikers die navigeren met een toetsenbord of schermlezer.
+
+Andere gemiste functionaliteiten waren een light- en dark-modus, een high-contrastmodus voor visueel beperkte gebruikers, en de mogelijkheid om achtergrondvideo’s te pauzeren. Deze verbeterpunten zullen bijdragen aan een betere toegankelijkheid en gebruikservaring van de website.
 </details>
 
 
@@ -67,13 +72,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/FED-homebage-breakdown.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/carousel-dynamisch-ss.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/dynamisch-menu-ss.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
