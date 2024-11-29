@@ -1,31 +1,92 @@
-/**************/
-/* CSS REMEDY */
-/**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
-}
-
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+:root{
+	color-scheme: light dark;
+}
+
+/*********************/
+/* fonts */
+/*********************/
+@font-face {
+	font-family: "suisseintl-black";
+	src: url(fonts/suisseintl-black);
+}
+
+@font-face {
+	font-family: "suisseintl-bold";
+	src: url(fonts/suisseintl-bold);
+}
+
+@font-face {
+	font-family: "suisseintl-regular";
+	src: url(fonts/suisseintl-regular);
 }
 
 
 
+body{
+    margin:0;
+}
+
+/*********************/
+/* Header */
+/*********************/
+header{
+    background-color: #c2002f;
+    background-image: url(/images/ajax-achtergrond-image-header.png);
+    height:4.625rem;
+    padding: 0 1.5rem;
+    background-size: 305vw auto;
+    background-position: 50% top;
+    display: flex;
+    align-items: center;
+	position: sticky;
+	top: 0em;
+	z-index: 2;
+	justify-content: space-between;
+}
+
+header img {
+    height: 1.5rem;
+    border-style: none;
+    background-repeat: no-repeat;
+    z-index: 3;
+    width: auto;
+    align-items: center;
+	
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav button{
+	display: flex;
+	align-items: center;
+    text-decoration: none;
+    background-color: white;
+	border-radius: 50%;
+	border: none;
+	height: 2.2rem;
+	width: 2.2rem;
+
+}
+
+nav button:nth-of-type(2){
+    margin-left: 1em;
+	
+}
+
+a{
+	cursor: pointer;
+}
 
 
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
-
+h1 {
+    display: none;
+}

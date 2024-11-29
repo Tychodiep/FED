@@ -95,6 +95,8 @@ Andere gemiste functionaliteiten waren een light- en dark-modus, een high-contra
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
+
+
   ### Agenda voor meeting
   samen met je groepje opstellen
 
@@ -104,8 +106,8 @@ Andere gemiste functionaliteiten waren een light- en dark-modus, een high-contra
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
+  - https://docs.emmet.io/cheat-sheet/ voor sneller code schhrijven
+  - 
   - nog een punt
   - ...
 

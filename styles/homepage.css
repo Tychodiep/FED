@@ -1,0 +1,171 @@
+
+/*********************/
+/* fonts */
+/*********************/
+@font-face {
+	font-family: "suisseintl-black";
+	src: url("../fonts/suisseintl-black.woff2");
+}
+
+@font-face {
+	font-family: "suisseintl-bold";
+	src: url("../fonts/suisseintl-bold.woff2");
+}
+
+@font-face {
+	font-family: "suisseintl-regular";
+	src: url("../fonts/suisseintl-regular.woff2");
+}
+
+
+/*********************/
+/* artikel 1 */
+/*********************/
+
+article:nth-of-type(1){
+    display: grid;
+    grid-template-rows: 1fr max-content;  
+    margin: 0em;
+    line-height: 1.1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+}
+
+article:nth-of-type(1) h2{
+    grid-row-start:1;
+    grid-column-start:1;
+    z-index: 1;
+    row-gap: 2rem;
+    color: white;
+    font-family: "suisseintl-bold";
+    margin-left: 1em;
+    margin-top: 1rem;
+    line-height: 1em;
+}
+
+article:nth-of-type(1) a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row-start: 2;
+    grid-column-start:1;
+    z-index: 1;
+    border: 1em;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-size: 1rem ;
+    font-weight: 600;
+    font-family: "suisseintl-bold";
+    padding: .75rem .75rem .75rem;
+    max-width: 7rem;
+    margin-left: 1em;
+    margin-bottom: 1rem;
+}
+
+
+article:nth-of-type(1) img{
+    display: block;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start:1;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*********************/
+/* artikel 2*/
+/*********************/
+
+article:nth-of-type(2){
+        display: grid;
+        grid-template-rows: 4em 1fr 3.3em max-content;  
+        margin: 0em;
+        line-height: 1.1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 2rem;
+}
+
+article:nth-of-type(2) h2{
+    grid-row-start:1;
+    grid-column-start:1;
+    z-index: 1;
+    row-gap: 2rem;
+    color: black;
+    font-family: "suisseintl-bold";
+    margin-top: 1rem;
+    line-height: 1em;
+    margin-left: 1rem;
+    max-width: 30%;
+
+}
+
+article:nth-of-type(2) p{
+    grid-row-start:2;
+    grid-column-start:1;
+    z-index: 1;
+    row-gap: 2rem;
+    color: black;
+    font-family: "suisseintl-regular";
+    margin-left: 1em;
+    line-height: 1em;
+    max-width: 30%;
+}
+
+article:nth-of-type(2) a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row-start: 3;
+    grid-column-start:1;
+    z-index: 1;
+    border: 1em;
+    text-decoration: none;
+    color: white;
+    background-color: #c2002f;
+    font-size: 1rem ;
+    font-weight: 600;
+    font-family: "suisseintl-bold";
+    padding: .75rem .75rem .75rem;
+    max-height: 2rem;
+    max-width: 7rem;
+    margin-left: 1em;
+    margin-bottom: 1rem;
+}
+
+article:nth-of-type(2) img{
+    display: block;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start:1;
+    width: 100%;
+    height: 100%;
+}
+
+/*********************/
+/* section 1*/
+/*********************/
+
+section:nth-of-type(1){
+    background-color: #181314;
+    margin-top: 4rem;
+}
+
+
+section:nth-of-type(1) h2{
+    color: white;
+}
+
+section:nth-of-type(1) ul{
+    display: flex;
+    overflow-x: scroll;
+}
+
+section:nth-of-type(1) li{
+    color: white;
+    list-style: none;
+    font-family: "suisseintl-bold";
+}

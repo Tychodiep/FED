@@ -2,12 +2,54 @@ body{
     margin:0;
 }
 
-
 header{
     background-color: #c2002f;
     background-image: url(/images/ajax-achtergrond-image-header.png);
+    height: 100%;
+    padding: 0 1.5rem;
+    background-size: 305vw auto;
+    background-position: 50% top;
+    display: flex;
+    padding: 1.5em;
+    align-items: center;
 }
+
+header img {
+    height: 1.5rem;
+    border-style: none;
+    background-repeat: no-repeat;
+    z-index: 3;
+    align-items: start;
+    width: auto;
+    align-items: center;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    list-style: none;
+
+}
+
+nav button{
+    text-decoration: none;
+    color: white;
+}
+
+
+
 
 img{
     max-width: 20em;
     max-height:20em;}
+
+*{
+    margin: 0;
+
+}
+
+h1 {
+    display: none;
+}
