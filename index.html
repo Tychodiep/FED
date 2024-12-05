@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="nl">
-	
 <head>
-	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>afcajax</title>
-	
-	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/ajax-logo.png">
-	<link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>afcajax</title>
+    <link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="styles/homepage.css">
 </head>
 
 <body>
-	<header>
-		<h1>Homepagina</h1>
-		<img src="images/ajax-logo-header.svg" alt="logo in de header">
-		<nav>
-			<button><img src="images/ajax-zoeken-header.svg" alt="zoek-icoon"></button>
-			<button><img src="images/ajax-hamburger-header.svg" alt="hamburger-icoon"></button>
-		</nav>
+    <header>
+        <h1>Homepagina</h1>
+        <img src="images/ajax-logo-header.svg" alt="logo in de header">
+        <nav>
+            <button><img src="images/ajax-zoeken-header.svg" alt="zoek-icoon"></button>
+            <button aria-hidden="true"><img src="images/ajax-hamburger-header.svg" alt="hamburger-menu"></button>
+            <ul>
+                <li><a class="active"href="#">Teams</a></li>
+                <li><a href="#">Club</a></li>
+                <li><a href="#">Fans</a></li>
+                <li><a href="#">Fanshop</a></li>
+                <li><a href="#">Tickets</a></li>
+            </ul>
+        </nav>
     </header>
+
 	
 	<main>
 		<article>
@@ -39,42 +41,59 @@
 		</article>
 
 		<section>
-			<h2>Uitgelicht</h2>
-			<a href="https://www.ajax.nl/ajax-video/">> meer video's</a>
+			<article>
+				<h2>Uitgelicht</h2>
+				<a href="https://www.ajax.nl/ajax-video/">> meer video's</a>
+			</article>
 			<ul>
 				<li>
 					<article>
-							<a href="https://www.ajax.nl/artikelen/farioli-ik-ben-heel-erg-blij-met-het-groepsgevoel/"><img src="images/farioli-foto-carouse.jpg" alt="foto intervieuw farioli"></a>
-							<h3>Farioli: 'Ik ben heel erg blij met het groepsgevoel'</h3>
+						<a href="https://www.ajax.nl/artikelen/farioli-ik-ben-heel-erg-blij-met-het-groepsgevoel/">
+							<img src="images/farioli-foto-carouse.jpg" alt="foto intervieuw farioli">
+							<img src="images/ajax-play-icon.svg" alt="play logo" class="play-icon">
+							<time datetime="6:30">6:30</time>
+						</a>
+						<h3>Farioli: <q>Ik ben heel erg blij met het groepsgevoel</q></h3>
 					</article>
 				</li>
 				<li>
 					<article>
-					<a href="https://www.ajax.nl/artikelen/ajax-reuenie-tijdens-gala-match-in-johan-cruijff-arena/"><img src="images/2de-foto-carousel.jpg" alt="foto ajax reuenie"></a>
-					<h3>Ajax-reünie tijdens Gala Match: 'Wat ben je nog fit!'</h3>
-		        </article>
-			</li>
+						<a href="https://www.ajax.nl/artikelen/ajax-reuenie-tijdens-gala-match-in-johan-cruijff-arena/">
+							<img src="images/2de-foto-carousel.jpg" alt="foto ajax reuenie">
+							<img src="images/ajax-play-icon.svg" alt="play logo" class="play-icon">
+							<time datetime="8:30">8:30</time>
+						</a>
+						<h3>Ajax-reünie tijdens Gala Match: <q>Wat ben je nog fit!</q></h3>
+					</article>
+				</li>
 				<li>
 					<article>
-					<a href="https://www.ajax.nl/artikelen/godts-ik-keek-er-echt-naar-uit-om-bij-te-tekenen/"><img src="images/mika-godts-interview.jpg" alt="foto intervieuw godts"></a>
-					<h3>Godts: 'Ik keek er écht naar uit om bij te tekenen'</h3>
-		        	</article>
+						<a href="https://www.ajax.nl/artikelen/godts-ik-keek-er-echt-naar-uit-om-bij-te-tekenen/">
+							<img src="images/mika-godts-interview.jpg" alt="foto intervieuw godts">
+							<img src="images/ajax-play-icon.svg" alt="play logo" class="play-icon">
+							<time datetime="2:30">3:30</time>
+						</a>
+						<h3>Godts: <q>Ik keek er écht naar uit om bij te tekenen</q></h3>
+					</article>
 				</li>
 			</ul>
 		</section>
 
 		<article>
-			<h2>
-				<a href="https://www.ajax.nl/artikelen/borstbeelden-voor-blind-rijkaard-tahamata-en-kluivert/">
-				 Borstbeelden voor Blind, Rijkaard, Tahamata en Kluivert</a>
-			</h2>
+				<h2><a href="https://www.ajax.nl/artikelen/borstbeelden-voor-blind-rijkaard-tahamata-en-kluivert/">Borstbeelden voor Blind, Rijkaard, Tahamata en Kluivert</a></h2>
+				<p>
+					Daley Blind, Patrick Kluivert, Simon Tahamata en Frank Rijkaard kregen afgelopen zondag hun borstbeeld voor het eerst te zien in het supportershome. Laatstgenoemde kon er helaas niet bij zijn, maar Louis van Gaal bedankte de supporters namens hem. "Hij vindt het wel leuk hoor dat ie hier hangt."
+				  </p>
+				<img src="images/ajax-play-icon.svg" alt="play logo" class="play-icon">
 			<ul>
 				<li>#Blind</li>
 				<li>#Rijkaard</li>
 				<li>#Tahamata</li>
 				<li>#Kluivert</li>
+				<button>
+					<img src="images/deel-button-ajax.svg" alt="deel icoontje">
+				</button>
 			</ul>
-			<button><img src="images/ajax-deel-icon.png" alt="deel icoontje"></button>
 			<img src="images/ajax-borstbeeldrijkaard.jpg" alt="foto beeld van Rijkaard">
 		</article>
 
