@@ -31,12 +31,17 @@ body{
     margin:0;
 }
 
+
+
+
+
+
 /*********************/
 /* Header */
 /*********************/
 header {
     background-color: #c2002f;
-    background-image: url(/images/ajax-achtergrond-image-header.png);
+    background-image: url(../images/ajax-achtergrond-image-header.png);
     height: 4.625rem;
     padding: 0 1.5rem;
     background-size: 305vw auto;
@@ -45,7 +50,7 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     justify-content: space-between;
 }
 
@@ -87,7 +92,7 @@ nav ul {
     width: 100%;
     height: 100%;
     background-color: #c2002f; 
-    background-image: url(/images/ajax-achtergrond-image-header.png);
+    background-image: url(../images/ajax-achtergrond-image-header.png);
     background-size: 305vw auto;
     background-position: 50% top;
     display: flex;
@@ -98,7 +103,8 @@ nav ul {
 	margin: 0;
 	gap: 1rem;
     transition: 0.5s ease; 
-    transform: translateY(-100%); 
+    transform: translateY(-100%);
+
 }
 
 nav ul li {
@@ -128,10 +134,9 @@ nav.toonMenu ul {
     transform: translateY(0);
 }
 
-nav.toonMenu button img{
+nav.toonMenu button:nth-of-type(2) img{
 	content:url("../images/kruisje-header.svg")
-  }
-
+}
 
 @media (min-width: 38em) {
     nav ul {
@@ -156,6 +161,53 @@ nav.toonMenu button img{
     }
 }
 
+nav.toonZoek button:nth-of-type(1) img{
+	content:url("../images/kruisje-header.svg")
+}
+
+
+nav .zoekbalk {
+    position: fixed;             
+    top: -100%;                  
+    left: 0;
+    width: 100%;  
+	height: 100%;                
+    display: none;                
+    flex-direction: column; 
+	margin-top: 4.6em;       
+    gap: 1rem;              
+    z-index: 1;                
+    padding: 1rem;
+	background-color: white;
+	
+}
+
+nav.toonZoek .zoekbalk {
+    display: flex; 
+	top: 0;   
+	padding: 0;          
+}
+
+nav .zoekbalk input {
+	border: none;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.33;
+    outline: none;
+    width: 100vw;
+    padding: 1rem 1.875rem 1rem 1.5rem;
+    background: #eee
+}
+
+nav .zoekbalk button {
+    position: absolute;
+    right: 1.5rem;
+    top: .75rem;
+    padding: .25rem;
+}
+
+
+
 /****************************************************************/
 /* Styling voor de header als de browser minimaal 54em breed is */
 /****************************************************************/
@@ -165,6 +217,53 @@ nav.toonMenu button img{
         flex-direction: row;
     }
 }
+
+
+/**********/
+/* footer */
+/**********/
+
+footer{
+	grid-column-gap:.75rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	line-height: 1.1rem;
+}
+
+footer h3{
+	font-family: "suisseintl-bold";
+}
+
+
+
+footer > section:nth-of-type(1) h2{
+	clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+}
+
+footer ul{
+	padding-left: 0rem;
+}
+
+footer li {
+	list-style: none;
+}
+
+footer a {
+	text-decoration: none;
+}
+footer img{
+	width: max-content;
+}
+
+
+
+
 
 a{
 	cursor: pointer;
@@ -181,3 +280,5 @@ h1 {
 		white-space: nowrap;
 		width: 1px;
 	  }
+
+
