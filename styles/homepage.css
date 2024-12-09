@@ -28,7 +28,10 @@
 main > section:nth-of-type(1){
     display: grid;
     grid-template-columns: 1fr 1fr;
+    row-gap: 2em;
 }
+
+
 
 @media (max-width: 50em) {
     main > section:nth-of-type(1) article:nth-of-type(1)
@@ -52,23 +55,13 @@ main > section:nth-of-type(1){
     }
 }
 
-
-
-
-
-
-/*********************/
 /* artikel 1 */
-/*********************/
 
 main > section:nth-of-type(1) article:nth-of-type(1){
     display: grid;
     grid-template-rows: 1fr max-content;  
     margin: 0em;
     line-height: 1.1rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-top: 2rem;
 }
 
 main > section:nth-of-type(1) article:nth-of-type(1) h2{
@@ -125,9 +118,6 @@ main > section:nth-of-type(1) article:nth-of-type(2){
         grid-template-rows: 4em 1fr 3.3em max-content;  
         margin: 0em;
         line-height: 1.1rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        padding-top: 2rem;
 }
 
 main > section:nth-of-type(1) article:nth-of-type(2) h2{
@@ -192,11 +182,8 @@ main > section:nth-of-type(1) article:nth-of-type(2) img{
 
 main > section:nth-of-type(2) {
     background-color: #181314;
-    margin-top: 4rem;
-    padding: 0 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
-    
+    padding-top: 2em;
+   padding-bottom: 2em;
 }
 
 main > section:nth-of-type(2) h2 {
@@ -219,14 +206,15 @@ main > section:nth-of-type(2) ul {
     display: flex;              
     overflow-x: auto;             
     scroll-behavior: smooth;      
-    scrollbar-width: thin;
-    scrollbar-gutter: 2em;        
+    scrollbar-width: thin;   
     scrollbar-color: #c2002f white;
     margin-right: 1rem;
     margin-left: 0;
     margin-top: 0;
     padding-left: 1em;
-    gap: 1rem;                    
+    gap: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 1em;                    
 }
 
 main > section:nth-of-type(2) li {
@@ -281,42 +269,58 @@ main > section:nth-of-type(2) h3 {
 }
 
 /*********************/
-/* articel 3 */
+/* section 3 */
 /*********************/
-main > article:nth-of-type(1){
+
+
+
+main > section:nth-of-type(3) article{
     display: flex;
     flex-direction: column;
-    margin: 0em;
-    line-height: 1.1rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-top: 0;
     position: relative;
-    margin-top: 4rem;
+    justify-items: stretch;
+    width: 100%;
+    height: 100%;
 }
 
-main > article:nth-of-type(1) h2{
+
+main > section:nth-of-type(3) article h2{
+    font-size: 1.5rem;
+    font-weight: 800;
     font-family: "suisseintl-bold";
+    line-height: .92;
+    margin-bottom: auto;
 }
 
-main > article:nth-of-type(1) a{
+main > section:nth-of-type(3) article a{
     text-decoration: none;
     color: black;
     background-color: white;
     font-weight: 600;
     font-family: "suisseintl-bold";
     font-size: 1.75rem;
-    line-height: 1;
+    line-height: 1.2;
 }
 
-main > article:nth-of-type(1) p{
+
+main > section:nth-of-type(3) article a:hover{
+   color: #c2002f;
+}
+
+
+main > section:nth-of-type(3) article p{
     font-family: "suisseintl-regular";
-    overflow: hidden;
     line-height: 1.53;
     font-size: 1.125rem;
+    display: -webkit-box;           /* Flexbox met ondersteuning voor box-model chatgbt */
+  -webkit-box-orient: vertical;  /* Verticale oriëntatie chatgbt */
+  overflow: hidden;              /* Verberg overtollige tekst chatgbt */
+-webkit-line-clamp: 3;          /*  Beperk tot 3 regels chatgbt */
+  max-height: calc(1.5em * 3);  
 }
 
-main > article:nth-of-type(1) ul {
+
+main > section:nth-of-type(3) article ul {
     display: flex;              
     flex-wrap: wrap;            
     align-items: center;
@@ -325,10 +329,10 @@ main > article:nth-of-type(1) ul {
     margin: 0;
     gap: 0.5rem; 
     padding-bottom: .625rem;
-    border-bottom: .0625rem solid #c2002f;               
+    border-bottom: .0625rem solid #c2002f;              
 }
 
-main > article:nth-of-type(1) li {
+main > section:nth-of-type(3) article li {
     border: solid;
     background-color: #413e3e;
     color: white;
@@ -341,21 +345,23 @@ main > article:nth-of-type(1) li {
     padding: .4375rem .3125rem;
 }
 
-main > article:nth-of-type(1) button {
+
+main > section:nth-of-type(3) article button {
     display: flex;             
     justify-content: center;    
-    align-items: end;        
+    align-items: flex-end;        
     border: none;              
-    background-color: white;    
-    cursor: pointer;            
+    background-color: white;               
     padding: 0.5rem;           
-    height: auto;        
+    height: auto;
+    margin-left: auto;        
 }
 
-main > article:nth-of-type(1) .play-icon{
+
+main > section:nth-of-type(3) article .play-icon{
     position: absolute;
-    top: 1rem;
-    left: 2.5rem;
+    top: 1.5rem;
+    left: 1.5rem;
     z-index: 1;
     height: 2rem;
     width: 2rem;
@@ -363,30 +369,60 @@ main > article:nth-of-type(1) .play-icon{
     border-radius: 100%;
     background-color: #c2002f;
 }
-main > article:nth-of-type(1) img{
+
+
+
+main > section:nth-of-type(3) article > img {
+    aspect-ratio: 16 / 9; /* Houd een vaste verhouding, bijvoorbeeld breedte/hoogte = 16:9 chatgbt*/
     width: 100%;
-    height: auto;
+    object-fit: cover;
+    display: block;
     order: -1;
 }
 
+main > section:nth-of-type(3) {
+    display: grid;
+    grid-template-columns: 1fr; /* Drie kolommen */
+    grid-auto-rows: 1fr; /* Maak alle rijen even groot */
+    gap: 2rem; /* Ruimte tussen de artikelen */
+}
+
+
+
+
+@media (min-width: 50em) {
+    main > section:nth-of-type(3) article:nth-of-type(1)
+     {
+        grid-row-start: 1;
+        margin-bottom: 1rem; 
+    }
+}
+
+
+@media (min-width: 50em) {
+    main > section:nth-of-type(3)
+     {
+      grid-template-columns: 1fr 1fr; 
+    }
+}
+
+
+
+
 /*********************/
-/* section 3 */
+/* section 4 */
 /*********************/
 
-main > section:nth-of-type(3) {
+main > section:nth-of-type(4) {
    margin-top: 4rem;
    padding: 0 1.5rem;
    padding-bottom: 1.5rem;
    padding-top: 1.5rem;
 }
 
-main > section:nth-of-type(3) h2 {
 
 
-
-}
-
-main > section:nth-of-type(3) ul{
+main > section:nth-of-type(4) ul{
     display: flex;
     flex-direction: row;
     padding-left: 0;
@@ -395,7 +431,7 @@ main > section:nth-of-type(3) ul{
 
 }
 
-main > section:nth-of-type(3) img {
+main > section:nth-of-type(4) img {
     width: 100%;                 
     height: auto;                
 }

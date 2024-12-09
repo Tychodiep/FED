@@ -9,32 +9,34 @@
 
 
 
+
 /*********************/
 /* fonts */
 /*********************/
 @font-face {
 	font-family: "suisseintl-black";
-	src: url(fonts/suisseintl-black);
+	src: url("../fonts/suisseintl-black.woff2");
 }
 
 @font-face {
 	font-family: "suisseintl-bold";
-	src: url(fonts/suisseintl-bold);
+	src: url("../fonts/suisseintl-bold.woff2");
 }
 
 @font-face {
 	font-family: "suisseintl-regular";
-	src: url(fonts/suisseintl-regular);
+	src: url("../fonts/suisseintl-regular.woff2");
 }
 
 body{
     margin:0;
 }
 
+section{
+	padding: 0 1.5rem;
+	margin-top: 4rem;
 
-
-
-
+}
 
 /*********************/
 /* Header */
@@ -228,10 +230,15 @@ footer{
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 	line-height: 1.1rem;
+	padding-top: 3.75rem;
 }
 
 footer h3{
 	font-family: "suisseintl-bold";
+	margin-bottom: 0;
+	font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25;
 }
 
 
@@ -248,30 +255,113 @@ footer > section:nth-of-type(1) h2{
 
 footer ul{
 	padding-left: 0rem;
+	margin-top: 0;
 }
 
 footer li {
 	list-style: none;
+    padding: 0;
+    margin: 0;
+	
 }
 
 footer a {
 	text-decoration: none;
+	color: black;
+	font-family: "suisseintl-regular";
+	font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.25;
+
 }
 footer img{
-	width: max-content;
+	width: 100%;
 }
 
 
 
 
+
+@media (width > 32em) {
+	footer > section:nth-of-type(1) {
+		display:grid;
+		grid-template-columns:1fr 1fr;
+		grid-column-gap: .75rem;
+	}
+	
+	img {
+		grid-column-start:1;
+		grid-column-end:-1;
+	
+	}
+	
+	h3:nth-of-type(1),
+	h3:nth-of-type(2) {
+		grid-row-start:2;
+	} 
+	
+	h3:nth-of-type(3),
+	h3:nth-of-type(4) {
+		grid-row-start:4;
+	} 
+	
+}
+
+footer > section:nth-of-type(3) h2,
+footer > section:nth-of-type(2) h2{
+	font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25;
+	font-family: "suisseintl-bold";
+	margin-bottom: 0.65rem;
+}
+
+footer > section:nth-of-type(2) p{
+	font-size: 1rem;
+    font-family: "suisseintl-regular";
+    font-weight: 300;
+    line-height: 1.25;
+	margin-top: 0;
+}
+
+footer > section:nth-of-type(2) a{
+min-height: 2rem;
+padding: 0 .75rem;
+font-size: 1rem;
+font-family: "suisseintl-bold";
+font-weight: 600;
+line-height: 1.25;
+line-height: 1.43;
+border: none;
+background: #c2002f;
+color: #fff; 
+height: .0625rem;
+display: inline-flex;
+text-align: center;
+align-items: center;
+}
+
+footer > section:nth-of-type(3) ul{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0;
+    padding: 0
+}
+
+footer > section:nth-of-type(3) li{
+	display: list-item;
+	margin-right: 1rem;
+}
+
+/* Link stijl */
 
 a{
 	cursor: pointer;
 }
 
 
-h1 {
-    
+.visually_hidden {
 		clip: rect(0 0 0 0);
 		clip-path: inset(50%);
 		height: 1px;
@@ -279,6 +369,6 @@ h1 {
 		position: absolute;
 		white-space: nowrap;
 		width: 1px;
-	  }
+}
 
 

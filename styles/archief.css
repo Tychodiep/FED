@@ -1,0 +1,204 @@
+
+/*********************/
+/* fonts */
+/*********************/
+@font-face {
+	font-family: "suisseintl-black";
+	src: url("../fonts/suisseintl-black.woff2");
+}
+
+@font-face {
+	font-family: "suisseintl-bold";
+	src: url("../fonts/suisseintl-bold.woff2");
+}
+
+@font-face {
+	font-family: "suisseintl-regular";
+	src: url("../fonts/suisseintl-regular.woff2");
+}
+
+/* section 1 */
+
+main > section:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Drie kolommen */
+    grid-auto-rows: 1fr; /* Maak alle rijen even groot */
+    gap: 2rem; /* Ruimte tussen de artikelen */
+}
+
+
+@media (max-width: 75em){
+    main > section:nth-of-type(1) article:nth-of-type(1){
+        grid-row-start: 1;
+        margin-bottom: 1rem; 
+    }
+    
+}
+
+@media (max-width: 75em){
+    main > section:nth-of-type(1) article:nth-of-type(2){
+        grid-row-start: 2;
+    }
+}
+
+
+@media (max-width: 75em){
+    main > section:nth-of-type(1) article:nth-of-type(3){
+        grid-row-start: 3;
+    }
+}
+
+@media (max-width: 75em) {
+    main > section:nth-of-type(1)
+     {
+      grid-template-columns: 1fr 1fr; 
+    }
+}
+
+
+
+@media (max-width: 50em) {
+    main > section:nth-of-type(1) article:nth-of-type(1)
+     {
+        grid-row-start: 1;
+        margin-bottom: 1rem; 
+    }
+}
+
+@media (max-width: 50em){
+    main > section:nth-of-type(1) article:nth-of-type(2){
+        grid-row-start: 2;
+    }
+}
+
+@media (max-width: 50em) {
+    main > section:nth-of-type(1)
+     {
+      grid-template-columns: 1fr; 
+    }
+}
+
+main > h2{
+    font-size: 3.25rem;
+    font-family: "suisseintl-bold";
+    font-weight: 800;
+    line-height: .92;
+    text-transform: uppercase;
+    height: auto;
+}
+
+main{
+    padding: 0 1.5rem;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-items: stretch;
+    width: 100%;
+    height: 100%;
+}
+
+article h2{
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: "suisseintl-bold";
+    line-height: .92;
+    margin-bottom: auto;
+}
+
+article a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-weight: 600;
+    font-family: "suisseintl-bold";
+    font-size: 1.75rem;
+    line-height: 1.2;
+}
+
+article a:hover{
+   color: #c2002f;
+}
+
+article p{
+    font-family: "suisseintl-regular";
+    line-height: 1.53;
+    font-size: 1.125rem;
+    display: -webkit-box;           /* Flexbox met ondersteuning voor box-model chatgbt */
+  -webkit-box-orient: vertical;  /* Verticale oriëntatie chatgbt */
+  overflow: hidden;              /* Verberg overtollige tekst chatgbt */
+-webkit-line-clamp: 3;          /*  Beperk tot 3 regels chatgbt */
+  max-height: calc(1.5em * 3);  
+}
+
+article ul {
+    display: flex;              
+    flex-wrap: wrap;            
+    align-items: center;
+    list-style: none; 
+    padding-left: 0;
+    margin: 0;
+    gap: 0.5rem; 
+    padding-bottom: .625rem;
+    border-bottom: .0625rem solid #c2002f;              
+}
+
+article li {
+    border: solid;
+    background-color: #413e3e;
+    color: white;
+    text-transform: uppercase;
+    font-family: "suisseintl-regular";
+    font-weight: 300;
+    font-size: .625rem;
+    line-height: 1.2;
+    margin-right: .2rem;        
+    padding: .4375rem .3125rem;
+}
+
+ article button {
+    display: flex;             
+    justify-content: center;    
+    align-items: flex-end;        
+    border: none;              
+    background-color: white;               
+    padding: 0.5rem;           
+    height: auto;
+    margin-left: auto;        
+}
+
+article .play-icon{
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    z-index: 1;
+    height: 2rem;
+    width: 2rem;
+    border: .125rem solid #ffffff;
+    border-radius: 100%;
+    background-color: #c2002f;
+}
+article > img {
+    aspect-ratio: 16 / 9; /* Houd een vaste verhouding, bijvoorbeeld breedte/hoogte = 16:9 chatgbt*/
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    order: -1;
+}
+
+
+article .foto-icon,
+article .wolkje-icon{
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    z-index: 1;
+    height: 2rem;
+    width: 2rem;
+    border: .125rem solid #ffffff;
+    border-radius: 100%;
+    background-color: #c2002f;
+}
+
