@@ -4,9 +4,32 @@
 /*********************/
 
 :root{
-	color-scheme: light dark;
+    color-scheme: light dark;
+	--margin-small: 0.75rem;
+    --margin-medium: 1.5rem;
+    --margin-large: 4rem;
+
+    --color-wit: white;
+    --color-rood: #c2002f;
+    --color-text-dark: black;
+    --color-text-light: white;
+    --color-background-light: #eee;
+
+    --font-family-bold: "suisseintl-bold", sans-serif;
+    --font-family-regular: "suisseintl-regular", sans-serif;
+    --font-size-klein: 1rem;
+    --font-size-normaal: 1.125rem;
+    --font-size-groot: 1.5rem;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-wit: #121212; 
+        --color-text-dark: #eee; 
+        --color-text-light: white;
+        --color-background-light: #181818;
+        }
+    }
 
 
 
@@ -28,24 +51,24 @@
 	src: url("../fonts/suisseintl-regular.woff2");
 }
 
-body{
-    margin:0;
+
+/*********************/
+/* body */
+/*********************/
+
+body {
+    margin: 0;
 }
 
-section{
-	padding: 0 1.5rem;
-	margin-top: 4rem;
-
-}
 
 /*********************/
 /* Header */
 /*********************/
 header {
-    background-color: #c2002f;
+    background-color: var(--color-rood);
     background-image: url(../images/ajax-achtergrond-image-header.png);
     height: 4.625rem;
-    padding: 0 1.5rem;
+    padding: 0 var(--margin-medium);
     background-size: 305vw auto;
     background-position: 50% top;
     display: flex;
@@ -57,7 +80,7 @@ header {
 }
 
 header img {
-    height: 1.5rem;
+    height: var(--font-size-groot);
     border-style: none;
     background-repeat: no-repeat;
     z-index: 3;
@@ -77,14 +100,14 @@ nav button {
     display: flex;
     align-items: center;
     justify-content: center; 
-    background-color: white;
+    background-color: var(--color-wit);
     border-radius: 50%;
     border: none;
     height: 2.2rem;
     width: 2.2rem;
     z-index: 3;
     text-decoration: none;
-    margin-left: 0.75rem; 
+    margin-left: var(--margin-small);
 }
 
 nav ul {
@@ -93,7 +116,7 @@ nav ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #c2002f; 
+    background-color: var(--color-rood);
     background-image: url(../images/ajax-achtergrond-image-header.png);
     background-size: 305vw auto;
     background-position: 50% top;
@@ -101,12 +124,11 @@ nav ul {
     flex-direction: column; 
     justify-content: flex-start; 
     align-items: flex-start; 
-    padding: 5rem 1.5rem;
-	margin: 0;
-	gap: 1rem;
+    padding: 5rem var(--margin-medium);
+    margin: 0;
+    gap: var(--margin-small);
     transition: 0.5s ease; 
     transform: translateY(-100%);
-
 }
 
 nav ul li {
@@ -117,27 +139,24 @@ nav ul li {
 
 nav ul a {
     text-decoration: none;
-    color: white; 
-    font-family: "suisseintl-bold", sans-serif; 
-    font-size: 1.5rem; 
+    color: var(--color-text-light);
+    font-family: var(--font-family-bold);
+    font-size: var(--font-size-groot);
     display: block;
     width: 100%;
 }
 
-
 nav ul li a {
     display: block;
- 
 }
-
 
 nav.toonMenu ul {
     top: 0; 
     transform: translateY(0);
 }
 
-nav.toonMenu button:nth-of-type(2) img{
-	content:url("../images/kruisje-header.svg")
+nav.toonMenu button:nth-of-type(2) img {
+    content: url("../images/kruisje-header.svg");
 }
 
 @media (min-width: 38em) {
@@ -154,8 +173,8 @@ nav.toonMenu button:nth-of-type(2) img{
     }
 
     nav ul a {
-        color: white;
-        font-size: 1rem; 
+        color: var(--color-text-light);
+        font-size: var(--font-size-klein);
     }
 
     nav button {
@@ -163,56 +182,49 @@ nav.toonMenu button:nth-of-type(2) img{
     }
 }
 
-nav.toonZoek button:nth-of-type(1) img{
-	content:url("../images/kruisje-header.svg")
+nav.toonZoek button:nth-of-type(1) img {
+    content: url("../images/kruisje-header.svg");
 }
-
 
 nav .zoekbalk {
     position: fixed;             
     top: -100%;                  
     left: 0;
     width: 100%;  
-	height: 100%;                
+    height: 100%;                
     display: none;                
     flex-direction: column; 
-	margin-top: 4.6em;       
-    gap: 1rem;              
+    margin-top: 4.6em;       
+    gap: var(--margin-small);              
     z-index: 1;                
-    padding: 1rem;
-	background-color: white;
-	
+    padding: var(--margin-small);
+    background-color: var(--color-wit);
 }
 
 nav.toonZoek .zoekbalk {
     display: flex; 
-	top: 0;   
-	padding: 0;          
+    top: 0;   
+    padding: 0;          
 }
 
 nav .zoekbalk input {
-	border: none;
-    font-size: 1.125rem;
+    border: none;
+    font-size: var(--font-size-normaal);
     font-weight: 300;
     line-height: 1.33;
     outline: none;
     width: 100vw;
-    padding: 1rem 1.875rem 1rem 1.5rem;
-    background: #eee
+    padding: var(--margin-small) 1.875rem var(--margin-small) var(--margin-medium);
+    background: var(--color-background-light);
 }
 
 nav .zoekbalk button {
     position: absolute;
-    right: 1.5rem;
-    top: .75rem;
-    padding: .25rem;
+    right: var(--margin-medium);
+    top: var(--margin-small);
+    padding: 0.25rem;
 }
 
-
-
-/****************************************************************/
-/* Styling voor de header als de browser minimaal 54em breed is */
-/****************************************************************/
 @media (min-width: 54em) {
     header > a:last-of-type,
     nav a {
@@ -220,155 +232,180 @@ nav .zoekbalk button {
     }
 }
 
-
 /**********/
 /* footer */
 /**********/
 
-footer{
-	grid-column-gap:.75rem;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
-	line-height: 1.1rem;
-	padding-top: 3.75rem;
+footer {
+    grid-column-gap: var(--margin-small);
+    padding-left: var(--margin-medium);
+    padding-right: var(--margin-medium);
+    line-height: 1.1rem;
+    padding-top: var(--margin-large);
 }
 
-footer h3{
-	font-family: "suisseintl-bold";
-	margin-bottom: 0;
-	font-size: 1rem;
+footer h3 {
+    font-family: var(--font-family-bold);
+    margin-bottom: 0;
+    font-size: var(--font-size-klein);
     font-weight: 600;
     line-height: 1.25;
+    padding-top: calc(var(--margin-large) - 0.25rem);
 }
 
-
-
-footer > section:nth-of-type(1) h2{
-	clip: rect(0 0 0 0);
-		clip-path: inset(50%);
-		height: 1px;
-		overflow: hidden;
-		position: absolute;
-		white-space: nowrap;
-		width: 1px;
+footer > section:nth-of-type(1) h2 {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
-footer ul{
-	padding-left: 0rem;
-	margin-top: 0;
+footer ul {
+    padding-left: 0;
+    margin-top: 0;
 }
 
 footer li {
-	list-style: none;
+    list-style: none;
     padding: 0;
     margin: 0;
-	
 }
 
 footer a {
-	text-decoration: none;
-	color: black;
-	font-family: "suisseintl-regular";
-	font-size: 1rem;
+    text-decoration: none;
+    color: var(--color-text-dark);
+    font-family: var(--font-family-regular);
+    font-size: var(--font-size-klein);
     font-weight: 300;
     line-height: 1.25;
-
-}
-footer img{
-	width: 100%;
 }
 
+footer img {
+    width: 100%;
+}
 
+/* Responsive styles */
+@media (min-width: 32em) {
+    footer > section:nth-of-type(1) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: var(--margin-small);
+    }
 
+    img {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
 
+    h3:nth-of-type(1),
+    h3:nth-of-type(2) {
+        grid-row-start: 2;
+    }
 
-@media (width > 32em) {
-	footer > section:nth-of-type(1) {
-		display:grid;
-		grid-template-columns:1fr 1fr;
-		grid-column-gap: .75rem;
-	}
-	
-	img {
-		grid-column-start:1;
-		grid-column-end:-1;
-	
-	}
-	
-	h3:nth-of-type(1),
-	h3:nth-of-type(2) {
-		grid-row-start:2;
-	} 
-	
-	h3:nth-of-type(3),
-	h3:nth-of-type(4) {
-		grid-row-start:4;
-	} 
-	
+    h3:nth-of-type(3),
+    h3:nth-of-type(4) {
+        grid-row-start: 4;
+    }
 }
 
 footer > section:nth-of-type(3) h2,
-footer > section:nth-of-type(2) h2{
-	font-size: 1rem;
+footer > section:nth-of-type(2) h2 {
+    font-size: var(--font-size-klein);
     font-weight: 600;
     line-height: 1.25;
-	font-family: "suisseintl-bold";
-	margin-bottom: 0.65rem;
+    font-family: var(--font-family-bold);
+    margin-bottom: 0.65rem;
 }
 
-footer > section:nth-of-type(2) p{
-	font-size: 1rem;
-    font-family: "suisseintl-regular";
+footer > section:nth-of-type(2) p {
+    font-size: var(--font-size-klein);
+    font-family: var(--font-family-regular);
     font-weight: 300;
     line-height: 1.25;
-	margin-top: 0;
+    margin-top: 0;
 }
 
-footer > section:nth-of-type(2) a{
-min-height: 2rem;
-padding: 0 .75rem;
-font-size: 1rem;
-font-family: "suisseintl-bold";
-font-weight: 600;
-line-height: 1.25;
-line-height: 1.43;
-border: none;
-background: #c2002f;
-color: #fff; 
-height: .0625rem;
-display: inline-flex;
-text-align: center;
-align-items: center;
+footer > section:nth-of-type(2) a {
+    min-height: 2rem;
+    padding: 0 var(--margin-small);
+    font-size: var(--font-size-klein);
+    font-family: var(--font-family-bold);
+    font-weight: 600;
+    line-height: 1.43;
+    border: none;
+    background: var(--color-rood);
+    color: var(--color-wit);
+    height: 0.0625rem;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
 }
 
-footer > section:nth-of-type(3) ul{
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	margin: 0;
-    padding: 0
+footer > section:nth-of-type(3) ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-footer > section:nth-of-type(3) li{
-	display: list-item;
-	margin-right: 1rem;
+footer > section:nth-of-type(3) li {
+    display: list-item;
+    margin-right: var(--margin-medium);
 }
 
 /* Link stijl */
 
-a{
-	cursor: pointer;
+
+
+section a:hover {
+    color: var(--color-rood);
 }
 
 
+/* tab stijl*/
+
+main:focus-visible{
+	border: .2em solid var(--color-rood);
+    outline: none; 
+}
+
+/* dark mode*/
+
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: #121212;
+      color: white;
+    }
+    a {
+        color: var(--color-text-light);
+    }
+    button img {
+    filter: invert(1); 
+
+    }
+    footer img {
+        filter: invert(1); 
+    }
+
+}
+
+
+
+
+
+
 .visually_hidden {
-		clip: rect(0 0 0 0);
-		clip-path: inset(50%);
-		height: 1px;
-		overflow: hidden;
-		position: absolute;
-		white-space: nowrap;
-		width: 1px;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
 

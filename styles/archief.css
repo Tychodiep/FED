@@ -1,97 +1,74 @@
 
+
 /*********************/
-/* fonts */
+/* Section 1 */
 /*********************/
-@font-face {
-	font-family: "suisseintl-black";
-	src: url("../fonts/suisseintl-black.woff2");
-}
-
-@font-face {
-	font-family: "suisseintl-bold";
-	src: url("../fonts/suisseintl-bold.woff2");
-}
-
-@font-face {
-	font-family: "suisseintl-regular";
-	src: url("../fonts/suisseintl-regular.woff2");
-}
-
-/* section 1 */
 
 main > section:nth-of-type(1) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Drie kolommen */
-    grid-auto-rows: 1fr; /* Maak alle rijen even groot */
-    gap: 2rem; /* Ruimte tussen de artikelen */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: var(--margin-medium);
 }
 
-
-@media (max-width: 75em){
-    main > section:nth-of-type(1) article:nth-of-type(1){
+@media (max-width: 75em) {
+    main > section:nth-of-type(1) article:nth-of-type(1) {
         grid-row-start: 1;
-        margin-bottom: 1rem; 
+        margin-bottom: var(--margin-small); 
     }
-    
 }
 
-@media (max-width: 75em){
-    main > section:nth-of-type(1) article:nth-of-type(2){
+@media (max-width: 75em) {
+    main > section:nth-of-type(1) article:nth-of-type(2) {
         grid-row-start: 2;
     }
 }
 
-
-@media (max-width: 75em){
-    main > section:nth-of-type(1) article:nth-of-type(3){
+@media (max-width: 75em) {
+    main > section:nth-of-type(1) article:nth-of-type(3) {
         grid-row-start: 3;
     }
 }
 
 @media (max-width: 75em) {
-    main > section:nth-of-type(1)
-     {
-      grid-template-columns: 1fr 1fr; 
+    main > section:nth-of-type(1) {
+        grid-template-columns: 1fr 1fr;
     }
 }
-
-
 
 @media (max-width: 50em) {
-    main > section:nth-of-type(1) article:nth-of-type(1)
-     {
+    main > section:nth-of-type(1) article:nth-of-type(1) {
         grid-row-start: 1;
-        margin-bottom: 1rem; 
+        margin-bottom: var(--margin-small); 
     }
 }
 
-@media (max-width: 50em){
-    main > section:nth-of-type(1) article:nth-of-type(2){
+@media (max-width: 50em) {
+    main > section:nth-of-type(1) article:nth-of-type(2) {
         grid-row-start: 2;
     }
 }
 
 @media (max-width: 50em) {
-    main > section:nth-of-type(1)
-     {
-      grid-template-columns: 1fr; 
+    main > section:nth-of-type(1) {
+        grid-template-columns: 1fr;
     }
 }
 
-main > h2{
+main > h2 {
     font-size: 3.25rem;
-    font-family: "suisseintl-bold";
+    font-family: var(--font-family-bold);
     font-weight: 800;
-    line-height: .92;
+    line-height: 0.92;
     text-transform: uppercase;
     height: auto;
 }
 
-main{
-    padding: 0 1.5rem;
+main {
+    padding: 0 var(--margin-medium);
 }
 
-article{
+article {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -100,105 +77,101 @@ article{
     height: 100%;
 }
 
-article h2{
-    font-size: 1.5rem;
+article h2 {
+    font-size: var(--font-size-groot);
+    font-family: var(--font-family-bold);
     font-weight: 800;
-    font-family: "suisseintl-bold";
-    line-height: .92;
+    line-height: 0.92;
     margin-bottom: auto;
 }
 
-article a{
+article a {
     text-decoration: none;
-    color: black;
-    background-color: white;
+    color: var(--color-text-dark);
+    background-color: var(--color-wit);
     font-weight: 600;
-    font-family: "suisseintl-bold";
-    font-size: 1.75rem;
+    font-family: var(--font-family-bold);
+    font-size: calc(var(--font-size-groot) * 1.17); /* Vergroten van de grootte chatgbt */
     line-height: 1.2;
 }
 
-article a:hover{
-   color: #c2002f;
-}
 
-article p{
-    font-family: "suisseintl-regular";
+article p {
+    font-family: var(--font-family-regular);
     line-height: 1.53;
-    font-size: 1.125rem;
-    display: -webkit-box;           /* Flexbox met ondersteuning voor box-model chatgbt */
-  -webkit-box-orient: vertical;  /* Verticale oriëntatie chatgbt */
-  overflow: hidden;              /* Verberg overtollige tekst chatgbt */
--webkit-line-clamp: 3;          /*  Beperk tot 3 regels chatgbt */
-  max-height: calc(1.5em * 3);  
+    font-size: var(--font-size-normaal);
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    overflow: hidden; 
+    -webkit-line-clamp: 3;
+    max-height: calc(1.5em * 3);
 }
 
 article ul {
-    display: flex;              
-    flex-wrap: wrap;            
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    list-style: none; 
+    list-style: none;
     padding-left: 0;
     margin: 0;
-    gap: 0.5rem; 
-    padding-bottom: .625rem;
-    border-bottom: .0625rem solid #c2002f;              
+    gap: calc(var(--margin-small) / 2);
+    padding-bottom: calc(var(--margin-small) / 2);
+    border-bottom: 0.0625rem solid var(--color-rood);
 }
 
 article li {
     border: solid;
     background-color: #413e3e;
-    color: white;
+    color: var(--color-text-light);
     text-transform: uppercase;
-    font-family: "suisseintl-regular";
+    font-family: var(--font-family-regular);
     font-weight: 300;
-    font-size: .625rem;
+    font-size: 0.625rem;
     line-height: 1.2;
-    margin-right: .2rem;        
-    padding: .4375rem .3125rem;
+    margin-right: 0.2rem;        
+    padding: 0.4375rem 0.3125rem;
 }
 
- article button {
+article button {
     display: flex;             
     justify-content: center;    
     align-items: flex-end;        
     border: none;              
-    background-color: white;               
-    padding: 0.5rem;           
+    background-color: var(--color-wit);               
+    padding: calc(var(--margin-small) / 2);           
     height: auto;
     margin-left: auto;        
 }
 
-article .play-icon{
+article .play-icon {
     position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
+    top: var(--margin-medium);
+    left: var(--margin-medium);
     z-index: 1;
     height: 2rem;
     width: 2rem;
-    border: .125rem solid #ffffff;
+    border: 0.125rem solid var(--color-wit);
     border-radius: 100%;
-    background-color: #c2002f;
+    background-color: var(--color-rood);
 }
+
 article > img {
-    aspect-ratio: 16 / 9; /* Houd een vaste verhouding, bijvoorbeeld breedte/hoogte = 16:9 chatgbt*/
+    aspect-ratio: 16 / 9;
     width: 100%;
     object-fit: cover;
     display: block;
     order: -1;
 }
 
-
 article .foto-icon,
-article .wolkje-icon{
+article .wolkje-icon {
     position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
+    top: var(--margin-medium);
+    left: var(--margin-medium);
     z-index: 1;
     height: 2rem;
     width: 2rem;
-    border: .125rem solid #ffffff;
+    border: 0.125rem solid var(--color-wit);
     border-radius: 100%;
-    background-color: #c2002f;
+    background-color: var(--color-rood);
 }
-
