@@ -4,54 +4,45 @@
 /* Section 1 */
 /*********************/
 
+
 main > section:nth-of-type(1) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr; 
     grid-auto-rows: 1fr;
     gap: var(--margin-medium);
 }
 
-@media (max-width: 75em) {
-    main > section:nth-of-type(1) article:nth-of-type(1) {
-        grid-row-start: 1;
-        margin-bottom: var(--margin-small); 
-    }
+main > section:nth-of-type(1) article:nth-of-type(1) {
+    grid-row-start: 1;
+    margin-bottom: var(--margin-small);
 }
 
-@media (max-width: 75em) {
-    main > section:nth-of-type(1) article:nth-of-type(2) {
-        grid-row-start: 2;
-    }
+main > section:nth-of-type(1) article:nth-of-type(2) {
+    grid-row-start: 2;
 }
 
-@media (max-width: 75em) {
-    main > section:nth-of-type(1) article:nth-of-type(3) {
-        grid-row-start: 3;
-    }
+main > section:nth-of-type(1) article:nth-of-type(3) {
+    grid-row-start: 3;
 }
 
-@media (max-width: 75em) {
+
+@media (min-width: 50em) {
     main > section:nth-of-type(1) {
         grid-template-columns: 1fr 1fr;
     }
-}
 
-@media (max-width: 50em) {
-    main > section:nth-of-type(1) article:nth-of-type(1) {
-        grid-row-start: 1;
-        margin-bottom: var(--margin-small); 
+    main > section:nth-of-type(1) article:nth-of-type(1),
+    main > section:nth-of-type(1) article:nth-of-type(2),
+    main > section:nth-of-type(1) article:nth-of-type(3) {
+        grid-row-start: auto; 
+        margin-bottom: 0;
     }
 }
 
-@media (max-width: 50em) {
-    main > section:nth-of-type(1) article:nth-of-type(2) {
-        grid-row-start: 2;
-    }
-}
 
-@media (max-width: 50em) {
+@media (min-width: 75em) {
     main > section:nth-of-type(1) {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr; 
     }
 }
 
@@ -119,7 +110,7 @@ article ul {
     border-bottom: 0.0625rem solid var(--color-rood);
 }
 
-article li {
+article li:nth-of-type(1) {
     border: solid;
     background-color: #413e3e;
     color: var(--color-text-light);
@@ -130,9 +121,10 @@ article li {
     line-height: 1.2;
     margin-right: 0.2rem;        
     padding: 0.4375rem 0.3125rem;
+    margin-right: auto;
 }
 
-article button {
+article li button {
     display: flex;             
     justify-content: center;    
     align-items: flex-end;        
@@ -142,6 +134,20 @@ article button {
     height: auto;
     margin-left: auto;        
 }
+
+/* deel button active */
+
+article li button.active {
+    background-color: var(--color-rood);
+    color: white;
+    border: none;
+    border-radius: 100%;
+}
+
+article li button.active img{
+    filter: invert(1);
+}
+
 
 article .play-icon {
     position: absolute;

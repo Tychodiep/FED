@@ -14,6 +14,7 @@
     --color-text-dark: black;
     --color-text-light: white;
     --color-background-light: #eee;
+    --color-transparant:rgba(255, 0, 0, 0);
 
     --font-family-bold: "suisseintl-bold", sans-serif;
     --font-family-regular: "suisseintl-regular", sans-serif;
@@ -29,9 +30,18 @@
         --color-text-light: white;
         --color-background-light: #181818;
         }
+}
+
+@media (prefers-contrast: more) {
+    :root {
+        --color-wit: #fff; 
+        --color-rood: #ff0000; 
+        --color-text-dark: #000; 
+        --color-text-light: #fff; 
+        --color-background-light: #000; 
+        --color-transparant: rgba(255, 255, 255, 0.5); 
     }
-
-
+}
 
 /*********************/
 /* fonts */
@@ -60,6 +70,59 @@ body {
     margin: 0;
 }
 
+/* shirt logo */
+
+body > section:nth-of-type(1){
+    display: none;
+}
+
+
+@media (min-width: 50em){
+body > section:nth-of-type(1){
+    top: 2.5rem;
+    position: relative;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    padding-right: 5rem;
+}
+
+body > section:nth-of-type(1) img{
+    width: 2.625rem;
+    height: 2.625rem;
+    margin-right:2rem;
+    position: fixed;
+    z-index: 4;
+}
+}
+
+/* 3 crosses logo */
+
+body > section:nth-of-type(2){
+    display: none;
+}
+
+
+@media (min-width: 50em){
+body > section:nth-of-type(2){
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5rem;
+    height: auto;
+    width: 100%;
+    padding-bottom:1.5rem; 
+    z-index: 9;
+}
+
+body > section:nth-of-type(2) img{
+    width: 2.625rem;
+    height: .75rem;
+    margin-right:2rem;
+   
+}
+}
 
 /*********************/
 /* Header */
@@ -96,7 +159,8 @@ nav {
     list-style: none;
 }
 
-nav button {
+nav button:nth-last-of-type(2),
+nav button:nth-last-of-type(3) {
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -109,6 +173,31 @@ nav button {
     text-decoration: none;
     margin-left: var(--margin-small);
 }
+
+/* deel knop header */
+
+nav button:nth-last-of-type(1){
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: var(--color-transparant);
+    margin-left: var(--margin-small);
+    text-decoration: none;
+    border: none;
+    border-left: solid var(--color-wit);
+    padding-left: 1.5rem;
+    color: white;
+    margin-left: var(--margin-small);
+    height: 2.2rem;
+    width: 2.2rem;
+}
+
+nav button:nth-last-of-type(1) img{
+    filter: invert(1);
+}
+
+
 
 nav ul {
     position: fixed; 
@@ -159,7 +248,16 @@ nav.toonMenu button:nth-of-type(2) img {
     content: url("../images/kruisje-header.svg");
 }
 
+
 @media (min-width: 38em) {
+    header{
+        height: 7.5rem;
+        background-color: #c2002f;
+        background-image: url(../images/ajax-achtergrond-image-header.png);
+        background-repeat: no-repeat;
+        background-size: 100vw auto;
+        background-position: 50% -7vw;
+    }
     nav ul {
         position: static;
         transform: none;
@@ -168,17 +266,82 @@ nav.toonMenu button:nth-of-type(2) img {
         height: auto;
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: center;
+        align-items: center;
         padding: 0;
+        width: 100%;
+
     }
+
+    nav ul li:nth-of-type(4),
+    nav ul li:nth-of-type(5),
+    nav ul li:nth-of-type(6){
+        padding: .375rem .75rem;
+        border: .0625rem solid #ffffff;
+        border-radius: 2rem;
+    }
+
+    nav ul li {
+        border-bottom: solid transparent; 
+        transition:0.3s ease;
+    }
+
+    nav ul li:nth-of-type(1):hover,
+    nav ul li:nth-of-type(2):hover,
+    nav ul li:nth-of-type(3):hover{
+        border-bottom-color: var(--color-wit);
+    }
+
+    nav ul li:nth-of-type(4):hover,
+    nav ul li:nth-of-type(5):hover,
+    nav ul li:nth-of-type(6):hover{
+        padding: .375rem .75rem;
+        border: .0625rem solid #ffffff;
+        background-color: var(--color-wit);
+        border-radius: 2rem;
+        color: var(--color-text-dark);
+    }
+
+    nav ul li:nth-of-type(4) a:hover,
+    nav ul li:nth-of-type(5) a:hover,
+    nav ul li:nth-of-type(6) a:hover{
+      color: var(--color-text-dark);
+    }
+
+
 
     nav ul a {
         color: var(--color-text-light);
         font-size: var(--font-size-klein);
     }
 
-    nav button {
+    nav button:nth-of-type(2) {
         display: none; 
+    }
+
+    nav button:nth-of-type(1) {
+        order: 1; 
+        background-color: var(--color-transparant); 
+        border-left: solid var(--color-wit);
+        border-radius: 0;
+        padding-left: 1rem;
+        margin-left: 1rem;
+    }
+
+    nav button:nth-of-type(1) img {
+        filter: invert(1);
+    }
+    nav button:nth-of-type(3) {
+        order: 2; 
+        background-color: var(--color-transparant); 
+        border-left: solid var(--color-wit);
+        border-radius: 0;
+        padding-left: 1rem;
+        margin-left: .6rem;
+    }
+
+    nav button:nth-of-type(3) img {
+        filter: invert(1);
     }
 }
 
@@ -186,7 +349,7 @@ nav.toonZoek button:nth-of-type(1) img {
     content: url("../images/kruisje-header.svg");
 }
 
-nav .zoekbalk {
+nav form {
     position: fixed;             
     top: -100%;                  
     left: 0;
@@ -196,18 +359,18 @@ nav .zoekbalk {
     flex-direction: column; 
     margin-top: 4.6em;       
     gap: var(--margin-small);              
-    z-index: 1;                
+    z-index: 2;                
     padding: var(--margin-small);
     background-color: var(--color-wit);
 }
 
-nav.toonZoek .zoekbalk {
+nav.toonZoek form {
     display: flex; 
     top: 0;   
     padding: 0;          
 }
 
-nav .zoekbalk input {
+nav form input {
     border: none;
     font-size: var(--font-size-normaal);
     font-weight: 300;
@@ -218,7 +381,7 @@ nav .zoekbalk input {
     background: var(--color-background-light);
 }
 
-nav .zoekbalk button {
+nav form button {
     position: absolute;
     right: var(--margin-medium);
     top: var(--margin-small);
