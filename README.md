@@ -43,7 +43,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/team1.png" width="375px" alt="team1">
+  <img src="readme-images/ss-archief-pagina.png" width="375px" alt="archief">
  
 </details>
 
@@ -79,7 +79,6 @@ Andere gemiste functionaliteiten waren een light- en dark-modus, een high-contra
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dynamisch-menu-ss.png" width="375px" alt="breakdown van nog een dynamisch deel">
-
 </details>
 
 
@@ -92,7 +91,10 @@ Andere gemiste functionaliteiten waren een light- en dark-modus, een high-contra
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik ben begonnen met alle content in het html bestand te plaatsen hier had ik weinig problemen mee omdat ik dit al best goed onder de knie had. waar ik nog wel wat problemen ervaarde was hoeveel sections ik voor 1 deel moet gebruiken dit heeft mij best wel wat tijd gekost om alles goed en logisch onder elkaar te krijgen. het lastige hier van was dat ik eerst alleen 2 artikelen boven aan had staan die ik wel samen responsief wil maken later dus moest ik goed uitzoeken zonder divs en classes te gebuiken. dit is uiteindelijk goed gelukt.
+
+  ### foto 1: dit vond ik lastig maar is uit eindelijk goed gekomen:
+  <img src="readme-images/code-eerste-2-artikelen.png" width="375px" alt="eerste 2 artikelen">
 
 
 
@@ -107,10 +109,25 @@ Andere gemiste functionaliteiten waren een light- en dark-modus, een high-contra
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - https://docs.emmet.io/cheat-sheet/ voor sneller code schhrijven
-  - 
-  - nog een punt
-  - ...
+  - ik weet nu hoe ik doormiddel van grid tekst over plaatjes heen kan plaatsen, dit heeft mij erg goed geholpen om de eerste sectie te stijlen en dit heeft mij ook geholpen om grid echt goed te begrijpen. 
+  - ik heb tijdens dit gesprek ook geleerd hoe ik verschillende elementen moest aanspreken dus hoe je in je css een bepaald element aanspreekt. denk hierbij aan: nth of type en hoe je meerdere achter elkaar kan plaatsen
+  - hier gregen we ook een beter inzicht in hoe het komende weken er aan toe zou gaan.
+  - ⁠Alle fonts in een mapje ‘font’ zetten in je basiswebsite map. Hoofdletters mag als je het goed doet. En gekke puntjes enzo weghalen.
+  - ⁠Via inspecteren en kenmerken kun je afbeeldingen en fonts downloaden en bekijken
+  - ⁠../fonts in css
+  - ⁠Wanneer je normaal en Italic hebt bijvoorbeeld. 2x foutface opnemen in css bestand en dan font-style veranderen naar Italic.
+  - ⁠Sterretje margin, padding en fontfamily
 
+  - ⁠Mobiele weergave uitzetten bij inspecteren
+
+  - ⁠Font-size: ..vw; Voor het verschuiven tekst of afbeeldingen
+  - ⁠Font-size:clamp(1.5e  7vw, 5em); zodat de tekst niet kleiner wordt dan 1.5em en niet groter dan 5em.
+
+  - ⁠List maken van articles bijvoorbeeld voor een carrousel. (Flexbox gebruiken)
+
+
+  - ⁠li*3 betekent 3x een li = dat is emmet
+  - nav>ul>li*5>a = dat is emmet 
 </details>
 
 
@@ -123,26 +140,22 @@ Andere gemiste functionaliteiten waren een light- en dark-modus, een high-contra
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  ik ben hier niet heel veel verder gekomen dan vorige keer en dat komt omdat ik veel bezig was met het opmaken van de eerste artielen en de header voor small screen dit bleek toch best wat tijd te kosten. wat eigen niet zo heel goed ging en waar veel tijd naar toe ging was het maken van een carousel en hoe ik hier ook weer moest kijken hoeveel artikels binnen een sectie moesten zodat ik alles helder kon aanspreken in mijn css. 
+
+  ### foto 1: dit vond ik lastig maar is uit eindelijk goed gekomen:
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  Tycho: hoe krijg ik margin aan de zijkanten van het grid om alles goed uit te lijnen. bente: hamburger icoon is weg en die wil ik weer terug hebben. rest van het groepje was ziek dus die hadden geen vragen.  
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - @fontface werd nog even goed behandeld omdat dat nog niet helemaal duidelijk was hoe je die moest gebruiken 
+  - mijn grid werkte niet ik de artikelen niet direct uit de main aansprook waardoor het niet werkte ik had eerst dit: articel:nth-oftype(1) maar het moest zijn: main > articel:nth-of-type(1). verder is het mij nu ook gelukt om margin tussen de grids te grijgen doormiddel van collum gap en row gap. 
+  - er werd even goed door alles heen gekeken om te kijken of alle code een beetje netjes was.
+
 
 </details>
 
@@ -157,6 +170,14 @@ Andere gemiste functionaliteiten waren een light- en dark-modus, een high-contra
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  -mijn html klopt volledig zonder errors
+  -alle sections hebben een apparte titel
+  -het is mij niet meer gelukt om een tab stijl toe te voegen helaas
+  -text altanatief voor coplexe foto's was niet nodig 
+  -dark en light mode is er wel op mijn pagina
+  -high contrast is er ook op mijn pagina
+
+mijn website heeft de test goed doorstaan en kan dus online als een gevalideerde website!
 
 </details>
 
@@ -170,27 +191,38 @@ Andere gemiste functionaliteiten waren een light- en dark-modus, een high-contra
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+hier is eigenlijk het meest progressie geweest omdat het natturlijk aan het einde kwam. 
+wat ik heb gedaan:
+- header responsive gemaakt en het hamburger menu werkent gekrgen met js
+- microinteractie gemaakt met js door het deel icoontje om te toveren naar zodra je deze aandrukt hij rood wordt en er 1 bij komt in de header.
+- hele 2de pagina gemaakt en deze ook responsief gemaakt dit was nog erg lastig omdat alles weer binnen een grid moest wat ik nogsteeds onder de knie aan het rkijgen was.
+- eerste pagina voorzien van alle vormgeving
+- een probleem waar ik nog tegen aan liep was dat ik overal al margin had gebruikt terwijl ik dat veel makkelijker algemeen kon doen. dit heb ik aangepast zodat het hele document dezelfde margins en paddings heeft.
+- ik heb mij custom properties nu pas toegevoegd (oeps 😬) en deze overal toegepast aan mijn document. 
+
+ ### foto 1: dit vond ik lastig maar is uit eindelijk goed gekomen:
+  <img src="readme-images/artikelen-responsief .png" width="375px" alt="artikelen responsief gekregen op pagina 2">
+
+  <img src="readme-images/artikelen-responsief-home.png" width="375px" alt="artikelen responsief gekregen op homepage">
+
+  <img src="readme-images/header responsief .png" width="375px" alt="header responsief gekregen 1">
+
+  <img src="readme-images/header-responsief-2.png" width="375px" alt="header responsief gekregen 2>
+
+  <img src="readme-images/header-responsief-3.png" width="375px" alt="header responsief gekregen 3>
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  bente: Mijn vraag voor morgen is is dat mijn scroll animatie niet meer werkt, en wil weten wat ik nu anders moet doen. Tycho: Ik wil weten hoe ik mijn grid in de footer helemaal responsive maak. Tess: ik wil nog wat vragen over hoe ik grids naast elkaar kan zetten
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  We hadden het vrijdag vooral weer gehad over grid v, en over dat ik mijn(Bente) scroll balk via css moest maken in plaats van Java, en dat het belangrijk is om dingen echt goed aan te roepen, en over hoe je een afbeelding een maximale hoogte kan geven
 
+  - margin onder mijn carousel om de scrollbar te veranderen. 
 </details>
 
 
@@ -203,19 +235,43 @@ Andere gemiste functionaliteiten waren een light- en dark-modus, een high-contra
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+
+  <img src="readme-images/homepage-full-1.png" width="375px" alt="uitomst opdracht 1">
+
+  <img src="readme-images/homepage-full-2.png" width="375px" alt="uitomst opdracht 1">
+
+  <img src="readme-images/archief-full.png" width="375px" alt="uitomst opdracht 1">
+
+  <img src="readme-images/archief-middel.png" width="375px" alt="uitomst opdracht 1">
+
+  <img src="readme-images/archief-small.png" width="375px" alt="uitomst opdracht 1">
+
+  <img src="readme-images/footer-full.png" width="375px" alt="uitomst opdracht 1">
+
+<img src="readme-images/microinteractie-state-1 .png" width="375px" alt="uitomst opdracht 1">
+
+<img src="readme-images/microinteractie-state-2 .png" width="375px" alt="uitomst opdracht 1">
+
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  ik heb geleerd responsief te werk te gaan. ik ben trots op mijn header hoe die voledig responsive is en verschillende buttons en grote heeft. verder ben ik ook trots op mijn zoekbalk en mijn hamburger menu. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/zoekbalk.png" width="375px" alt="top">
+
+  <img src="readme-images/hamburgermenu.png" width="375px" alt="top">
+
+  <img src="readme-images/homepage-full-1.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  het is mij niet gelukt om de laatste section goed te laten werken dit kwam vooral omdat ik te weinig tijd had en het overzicht een beetje verloor. er moesten ook weer meer section toegevoegd worden dus dat ging niet optijd lukken. ik heb dat gedeelde wel opgemaakt maar niet werkend gekregen. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  het lastigste was om mijn microinteractie te implenteren in mijn website hier heb ik dus een aantal dingen aan AI gevraagd omdat ik er geeoon niet uitkwam(Ik geeft in mijn code aan waar ik chatgbt heb gebruikt).
+
+  <img src="readme-images/failed-artikel-home.png" width="375px" alt="bummer">
+
+  <img src="readme-images/js-microinteractei.png" width="375px" alt="bummer">
 </details>
 
 
@@ -231,8 +287,6 @@ Andere gemiste functionaliteiten waren een light- en dark-modus, een high-contra
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. chatgbt
 
 </details>
