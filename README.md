@@ -170,14 +170,56 @@ Andere gemiste functionaliteiten waren een light- en dark-modus, een high-contra
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-  -mijn html klopt volledig zonder errors
-  -alle sections hebben een apparte titel
-  -het is mij niet meer gelukt om een tab stijl toe te voegen helaas
-  -text altanatief voor coplexe foto's was niet nodig 
-  -dark en light mode is er wel op mijn pagina
-  -high contrast is er ook op mijn pagina
+  
+  
+  Een groot pluspunt van mijn website is dat mijn HTML volledig correct is en zonder enige validatiefouten. Dit blijkt uit de validatietest die ik heb uitgevoerd. Dit is iets wat mijn website onderscheidt van die van Ajax, waar meerdere fouten in de HTML-structuur aanwezig zijn.
+   <img src="readme-images/validator.png" width="375px" alt="validation van mij html">
 
-mijn website heeft de test goed doorstaan en kan dus online als een gevalideerde website!
+ Elke sectie in mijn website is voorzien van een duidelijke en unieke titel, wat zorgt voor structuur en overzicht. Dit is niet altijd het geval bij de Ajax-website, waar sommige secties ontbreken of geen aparte titels hebben. Door het toevoegen van een duidelijke structuur, verbetert de toegankelijkheid en wordt mijn website logischer opgebouwd voor gebruikers en screenreaders. 
+   <img src="readme-images/alle-sections-h2.png" width="375px" alt="alle section hebben een h2">
+
+  Elke pagina van mijn website bevat een H1-tag, zoals het hoort volgens webstandaarden. Dit zorgt ervoor dat de belangrijkste informatie direct herkend wordt. Dit is een verbetering ten opzichte van de Ajax-website, waar dit niet altijd consequent wordt toegepast.
+   <img src="readme-images/elke-pagina-h1.png" width="375px" alt="h1">
+
+  Het toevoegen van een tab-stijl is helaas niet gelukt binnen de gestelde tijd, maar ik heb er wel voor gezorgd dat elk interactief element op mijn website toegankelijk is met het toetsenbord. Dit maakt mijn website gebruiksvriendelijker voor mensen die navigeren zonder muis.
+  <img src="readme-images/tab-decoration.png" width="375px" alt="tab deco">
+  - wel is elk element die aangesproken wilt worden tab baar. 
+  <img src="readme-images/tab-decoration.png" width="375px" alt="tab deco">
+
+  -text altanatief voor coplexe foto's was niet nodig dus heb ik ook niet toegevoegd. 
+
+Mijn website biedt zowel een dark mode als een light mode, wat een enorme verbetering is voor de toegankelijkheid. Gebruikers kunnen hiermee de modus kiezen die het meest comfortabel is voor hun ogen. De Ajax-website heeft deze functionaliteit niet, waardoor mijn website hierin duidelijk een stap vooruit is.
+
+  dark mode:
+  <img src="readme-images/dark-mode.png" width="375px" alt="dark mode">
+
+  light mode:
+  <img src="readme-images/light-mode.png" width="375px" alt="light mode">
+
+  Daarnaast heb ik een high contrast-modus toegevoegd aan mijn website. Dit verbetert de leesbaarheid voor gebruikers met een visuele beperking. Ook deze functie ontbreekt op de Ajax-website, wat wederom een voordeel voor mijn ontwerp is.
+
+ In de oorspronkelijke versie van mijn website had ik knoppen opgenomen binnen een <ul> element. Dit is echter geen goede manier en kan verwarrend zijn voor gebruikers en screenreaders. Na ons gesprek heb ik dit aangepast en nu worden de knoppen correct buiten de lijst geplaatst.
+
+  het gaat om deze li:
+  <img src="readme-images/ul-niet-samen met-button.png" width="375px" alt="ul-en-button">
+
+
+  hoe het eerst was: 
+  <img src="readme-images/button-fout.png" width="375px" alt="eerst">
+
+  hoe het nu is:
+  <img src="readme-images/button-goed.png" width="375px" alt="hoe het nu is">
+
+  decoratie in een section gedaan. dit heb ik gedaan omdat ik dacht dat alle elementen een heading nodig hadden dus heb ik een section aangemaakt en daar een h2 in geplaatst. ik heb de foto's ook een alt text gegeven wat dus ook niet moest omdat het een decoraties was 
+
+  <img src="readme-images/decoration.png" width="auto" alt="decoration">
+  wat ik in mijn code fout deed: 
+  <img src="readme-images/deco-fout.png" width="375px" alt="tab deco">
+
+
+Conclusie
+
+Mijn website heeft de test goed doorstaan en is gevalideerd als een technisch correcte en toegankelijke website. Dankzij de aanpassingen die ik heb gedaan, voldoet mijn site aan moderne standaarden en is hij gebruiksvriendelijk voor een breed publiek. De combinatie van validatie, toegankelijkheidsopties (zoals dark mode, high contrast, en tabbaarheid) en een gestructureerde opzet maakt mijn website klaar om online te gaan. 🎉
 
 </details>
 
@@ -250,7 +292,7 @@ wat ik heb gedaan:
 
 <img src="readme-images/microinteractie-state-1 .png" width="375px" alt="uitomst opdracht 1">
 
-<img src="readme-images/microinteractie-state-2 .png" width="375px" alt="uitomst opdracht 1">
+<img src="readme-images/microinteractie-state-2.png" width="375px" alt="uitomst opdracht 1">
 
 
 

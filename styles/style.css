@@ -524,8 +524,6 @@ footer > section:nth-of-type(3) li {
 
 /* Link stijl */
 
-
-
 section a:hover {
     color: var(--color-rood);
 }
