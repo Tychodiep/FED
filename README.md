@@ -224,15 +224,15 @@ Mijn website heeft de test goed doorstaan en is gevalideerd als een technisch co
 
 hele checklist:
 
-<img src="readme-images/pagina-1.HEIC" width="375px" alt="pagina1">
+<img src="readme-images/pagina-1.jpeg" width="375px" alt="pagina1">
 
-<img src="readme-images/pagina-2.HEIC" width="375px" alt="pagina2">
+<img src="readme-images/pagina-2.jpeg" width="375px" alt="pagina2">
 
-<img src="readme-images/pagina-3.HEIC" width="375px" alt="pagina3">
+<img src="readme-images/pagina-3.jpeg" width="375px" alt="pagina3">
 
-<img src="readme-images/pagina-4.HEIC" width="375px" alt="pagina4">
+<img src="readme-images/pagina-4.jpeg" width="375px" alt="pagina4">
 
-<img src="readme-images/pagina-5.HEIC" width="375px" alt="pagina5">
+<img src="readme-images/pagina-5.jpeg" width="375px" alt="pagina5">
 
 
 </details>
