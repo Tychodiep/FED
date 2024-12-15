@@ -219,7 +219,7 @@ Mijn website biedt zowel een dark mode als een light mode, wat een enorme verbet
 
 Conclusie
 
-Mijn website heeft de test goed doorstaan en is gevalideerd als een technisch correcte en toegankelijke website. Dankzij de aanpassingen die ik heb gedaan, voldoet mijn site aan moderne standaarden en is hij gebruiksvriendelijk voor een breed publiek. De combinatie van validatie, toegankelijkheidsopties (zoals dark mode, high contrast, en tabbaarheid) en een gestructureerde opzet maakt mijn website klaar om online te gaan. 🎉
+Mijn website heeft de test goed doorstaan en is gevalideerd als een technisch correcte en toegankelijke website. Dankzij de aanpassingen die ik heb gedaan, voldoet mijn site aan de standaard en is hij gebruiksvriendelijk voor het publiek. De combinatie van validatie, toegankelijkheidsopties en een gestructureerde opzet maakt mijn website klaar om online te gaan. 🎉
 
 </details>
 
