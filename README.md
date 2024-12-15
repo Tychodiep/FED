@@ -221,6 +221,20 @@ Conclusie
 
 Mijn website heeft de test goed doorstaan en is gevalideerd als een technisch correcte en toegankelijke website. Dankzij de aanpassingen die ik heb gedaan, voldoet mijn site aan de standaard en is hij gebruiksvriendelijk voor het publiek. De combinatie van validatie, toegankelijkheidsopties en een gestructureerde opzet maakt mijn website klaar om online te gaan. 🎉
 
+
+hele checklist:
+
+<img src="readme-images/pagina-1.HEIC" width="375px" alt="pagina1">
+
+<img src="readme-images/pagina-2.HEIC" width="375px" alt="pagina2">
+
+<img src="readme-images/pagina-3.HEIC" width="375px" alt="pagina3">
+
+<img src="readme-images/pagina-4.HEIC" width="375px" alt="pagina4">
+
+<img src="readme-images/pagina-5.HEIC" width="375px" alt="pagina5">
+
+
 </details>
 
 
